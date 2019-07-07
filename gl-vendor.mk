@@ -10,4 +10,4 @@ PRODUCT_PACKAGES += \
 
 # HAL
 PRODUCT_PACKAGES += \
-    com.gl.ledcontrol@1.0 \
+    com.gl.ledcontrol@1.0-service.hikey960 \
