@@ -7,3 +7,7 @@
 
 PRODUCT_PACKAGES += \
     ServiceSkeleton \
+
+# HAL
+PRODUCT_PACKAGES += \
+    com.gl.ledcontrol@1.0 \
