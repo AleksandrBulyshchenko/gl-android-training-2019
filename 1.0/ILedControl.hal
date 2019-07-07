@@ -1,0 +1,36 @@
+/*
+ * Copyright (C) 2019 GloballLogic
+ */
+
+package com.gl.ledcontrol@1.0;
+
+/**
+ * ILedControl interface
+ */
+interface ILedControl {
+
+    /**
+     * Initialize LedControl.
+     *
+     * @return result 0 if successful, nonzero otherwise.
+     */
+     initLedControl() generates (int32_t result);
+
+    /**
+     * Terminate LedControl.
+     *
+     * @return result 0 if successful, nonzero otherwise.
+     */
+     terminateLedControl() generates (int32_t result);
+
+    /**
+     * Set LED state.
+     *
+     * @param led LED number
+     * @param state LED state to be set
+     * @return result 0 if successful, nonzero otherwise.
+     */
+     setLedState(Leds led, LedState state) generates (int32_t result);
+
+};
+

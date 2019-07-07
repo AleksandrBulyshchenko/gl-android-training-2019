@@ -1,0 +1,19 @@
+/*
+ * Copyright (C) 2019 GloballLogic
+ */
+
+package com.gl.ledcontrol@1.0;
+
+/** LED state. */
+enum LedState : uint8_t {
+    LED_STATUS_OFF,
+    LED_STATUS_ON,
+};
+
+/** LED number. */
+enum Leds : uint8_t {
+    LED_GREEN_1,
+    LED_GREEN_2,
+    LED_GREEN_3,
+    LED_GREEN_4,
+};
