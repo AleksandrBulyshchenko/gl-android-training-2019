@@ -1,0 +1,36 @@
+package com.gl.serviceskeleton;
+
+import android.app.Service;
+import android.content.Intent;
+import android.os.IBinder;
+import android.util.Log;
+
+public class ServiceSkeleton extends Service {
+
+    private static final String LOG_TAG = "MyService";
+
+    private com.gl.serviceskeleton.IServiceSkeleton.Stub mBinder = null;
+
+    public ServiceSkeleton() {
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        Log.d(LOG_TAG, "-> onCreate()");
+        mBinder = new ServiceSkeletonImpl();
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        super.onStartCommand(intent, flags, startId);
+        Log.d(LOG_TAG, "-> onStartCommand()");
+        return START_STICKY;
+    }
+
+    @Override
+    public IBinder onBind(Intent intent) {
+        Log.d(LOG_TAG, "-> onBind()");
+        return mBinder;
+    }
+}
