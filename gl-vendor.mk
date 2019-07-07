@@ -4,3 +4,6 @@
 #
 # Makefile for vendor componets developed in scope of the training
 #
+
+PRODUCT_PACKAGES += \
+    ServiceSkeleton \
