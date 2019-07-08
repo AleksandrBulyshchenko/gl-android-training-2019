@@ -6,6 +6,9 @@
 
 cc_binary {
     name: "com.gl.ledcontrol@1.0-service.hikey960",
+    init_rc: ["com.gl.ledcontrol@1.0-service.hikey960.rc"],
+    relative_install_path: "hw",
+    vendor: true,
     srcs: [
         "LedControl.cpp",
         "service.cpp",

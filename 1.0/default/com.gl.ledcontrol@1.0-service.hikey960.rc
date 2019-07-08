@@ -1,0 +1,7 @@
+service ledcontrol /system/vendor/bin/hw/com.gl.ledcontrol@1.0-service.hikey960
+    interface com.gl.ledcontrol@1.0::ILedControl default
+    class hal
+    user system
+    group system
+    oneshot
+    disabled
