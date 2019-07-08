@@ -11,3 +11,6 @@ PRODUCT_PACKAGES += \
 # HAL
 PRODUCT_PACKAGES += \
     com.gl.ledcontrol@1.0-service.hikey960 \
+
+TARGET_FS_CONFIG_GEN += \
+    vendor/gl/interfaces/config.fs \
