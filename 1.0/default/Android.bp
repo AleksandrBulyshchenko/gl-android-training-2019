@@ -1,0 +1,20 @@
+/*
+ * Copyright (C) 2018 GloballLogic
+ *
+ * com.gl.ledcontrol@1.0-service.hikey960 : Android.bp
+ */
+
+cc_binary {
+    name: "com.gl.ledcontrol@1.0-service.hikey960",
+    srcs: [
+        "LedControl.cpp",
+        "service.cpp",
+    ],
+    shared_libs: [
+        "com.gl.ledcontrol@1.0",
+        "libhidlbase",
+        "libhidltransport",
+        "libutils",
+        "liblog",
+    ],
+}
