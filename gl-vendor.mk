@@ -12,5 +12,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.gl.ledcontrol@1.0-service.hikey960 \
 
+DEVICE_MANIFEST_FILE += \
+    vendor/gl/interfaces/manifest.xml \
+
 TARGET_FS_CONFIG_GEN += \
     vendor/gl/interfaces/config.fs \
